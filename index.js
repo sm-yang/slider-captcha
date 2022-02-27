@@ -7,7 +7,7 @@ const { Builder, By } = require('selenium-webdriver')
   // 打开浏览器
   const driver = new Builder().forBrowser('chrome').build()
   // 加载腾讯防水墙官网
-  await driver.get('https://007.qq.com/online.html')
+  await driver.get('https://007.qq.com/online.html');
   // 点击体验验证码按钮
   (await driver.findElement(By.id('code'))).click()
   // 等验证码加载完
